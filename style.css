@@ -1,219 +1,612 @@
+/* ===========================
+   BOLADE MODEL COLLEGE
+   PROFESSIONAL WEBSITE
+=========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
 scroll-behavior:smooth;
-font-family:'Poppins',sans-serif;
 }
 
 body{
-background:#faf6ef;
-color:#4b3524;
+font-family:'Poppins',sans-serif;
+background:#fdfaf4;
+color:#3f2d20;
 line-height:1.7;
+overflow-x:hidden;
 }
 
-header{
-position:fixed;
-top:0;
-left:0;
-width:100%;
-background:#6f4e37;
-padding:15px 8%;
-z-index:1000;
-box-shadow:0 2px 10px rgba(0,0,0,.2);
-}
-
-.navbar{
-display:flex;
-justify-content:space-between;
-align-items:center;
-flex-wrap:wrap;
-}
-
-.logo h2{
-color:#fff;
-font-size:28px;
-}
-
-.logo p{
-color:#f8e7c4;
-font-size:13px;
-}
-
-.nav-links{
-display:flex;
-list-style:none;
-gap:20px;
-}
-
-.nav-links a{
-color:#fff;
-text-decoration:none;
-font-weight:600;
-transition:.3s;
-}
-
-.nav-links a:hover{
-color:#f4d7a1;
-}
-
-.hero{
-height:100vh;
-background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
-url("https://picsum.photos/1600/900?school") center/cover;
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
-padding:20px;
-}
-
-.hero-content h1{
-font-size:55px;
-color:white;
-margin-bottom:20px;
-}
-
-.hero-content p{
-color:white;
-font-size:20px;
-margin-bottom:30px;
-}
-
-.btn{
-display:inline-block;
-padding:15px 35px;
-background:#c49a6c;
-color:white;
-text-decoration:none;
-border-radius:8px;
-font-weight:bold;
-transition:.3s;
-}
-
-.btn:hover{
-background:#8b5e3c;
+img{
+max-width:100%;
+display:block;
 }
 
 .container{
 width:90%;
 max-width:1200px;
 margin:auto;
-padding:80px 0;
 }
 
-section h2{
-text-align:center;
-font-size:38px;
-margin-bottom:40px;
-color:#6f4e37;
+/* HEADER */
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+background:#5b3a29;
+padding:15px 0;
+z-index:1000;
+box-shadow:0 4px 20px rgba(0,0,0,.15);
 }
 
-.about-grid,
-.service-grid,
-.gallery-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
 }
 
-.card,
-.service{
-background:white;
-padding:25px;
-border-radius:12px;
-box-shadow:0 5px 15px rgba(0,0,0,.08);
+.logo{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.logo img{
+width:70px;
+height:70px;
+border-radius:50%;
+background:#fff;
+padding:4px;
+}
+
+.logo h2{
+color:#fff;
+font-size:26px;
+font-weight:700;
+}
+
+.logo p{
+color:#f6d7a8;
+font-size:14px;
+}
+
+.nav-links{
+display:flex;
+list-style:none;
+gap:28px;
+}
+
+.nav-links a{
+text-decoration:none;
+color:#fff;
+font-weight:600;
 transition:.3s;
 }
 
-.card:hover,
-.service:hover{
-transform:translateY(-8px);
+.nav-links a:hover{
+color:#e8c27a;
 }
 
-.gallery img{
-width:100%;
-height:250px;
-object-fit:cover;
-border-radius:12px;
-}
+/* HERO */
 
-.contact form{
+.hero{
+height:100vh;
+background:
+linear-gradient(rgba(45,28,18,.65),rgba(45,28,18,.65)),
+url("images/school1.jpg") center/cover no-repeat;
 display:flex;
-flex-direction:column;
-gap:15px;
-margin-bottom:40px;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:20px;
 }
 
-.contact input,
-.contact textarea{
-padding:15px;
-border:1px solid #ccc;
-border-radius:8px;
-font-size:16px;
+.hero-content{
+max-width:850px;
 }
 
-.contact button{
-background:#6f4e37;
-color:white;
-padding:15px;
-border:none;
-border-radius:8px;
+.hero-content h1{
+font-size:60px;
+font-weight:800;
+color:#fff;
+margin-bottom:20px;
+}
+
+.hero-content p{
+font-size:20px;
+color:#fff;
+margin-bottom:35px;
+}
+
+.btn{
+display:inline-block;
+padding:15px 40px;
+background:#c49a6c;
+color:#fff;
+text-decoration:none;
+border-radius:50px;
+font-weight:700;
+transition:.3s;
+}
+
+.btn:hover{
+background:#8d5f41;
+transform:translateY(-3px);
+}
+
+/* SECTION TITLES */
+
+section{
+padding:90px 0;
+}
+
+.section-title{
+text-align:center;
+margin-bottom:50px;
+}
+
+.section-title h2{
+font-size:40px;
+color:#5b3a29;
+margin-bottom:10px;
+}
+
+.section-title p{
+color:#777;
+font-size:18px;
+}
+/* ===========================
+   ABOUT SECTION
+=========================== */
+
+.about-content{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+gap:50px;
+align-items:center;
+}
+
+.about-text h3{
+font-size:34px;
+color:#5b3a29;
+margin-bottom:20px;
+}
+
+.about-text p{
 font-size:17px;
+margin-bottom:18px;
+color:#555;
+}
+
+.about-image img{
+border-radius:20px;
+box-shadow:0 15px 35px rgba(0,0,0,.18);
+transition:.4s;
+}
+
+.about-image img:hover{
+transform:scale(1.03);
+}
+
+/* ===========================
+   MISSION
+=========================== */
+
+.mission{
+background:#fffaf2;
+}
+
+.mission-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+}
+
+.mission-box{
+background:white;
+padding:35px;
+border-radius:18px;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+transition:.4s;
+}
+
+.mission-box:hover{
+transform:translateY(-10px);
+}
+
+.mission-box h3{
+color:#5b3a29;
+margin-bottom:15px;
+font-size:25px;
+}
+
+.mission-box p,
+.mission-box li{
+color:#555;
+font-size:16px;
+line-height:1.8;
+}
+
+.mission-box ul{
+padding-left:20px;
+}
+
+/* ===========================
+   PROGRAMMES
+=========================== */
+
+.programme-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.programme-card{
+background:white;
+padding:35px;
+border-radius:18px;
+text-align:center;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+transition:.4s;
+}
+
+.programme-card:hover{
+background:#5b3a29;
+transform:translateY(-10px);
+}
+
+.programme-card:hover h3,
+.programme-card:hover p{
+color:white;
+}
+
+.programme-card h3{
+margin-bottom:15px;
+font-size:24px;
+color:#5b3a29;
+}
+
+.programme-card p{
+color:#666;
+}
+
+/* ===========================
+   ANIMATIONS
+=========================== */
+
+@keyframes fadeUp{
+
+0%{
+opacity:0;
+transform:translateY(40px);
+}
+
+100%{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+.hero-content{
+animation:fadeUp 1.2s ease;
+}
+
+.about,
+.mission,
+.academics{
+animation:fadeUp 1.2s ease;
+}
+/* ===========================
+   FACILITIES
+=========================== */
+
+.facilities{
+background:#fff;
+}
+
+.facility-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+}
+
+.facility-card{
+background:#fff;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 12px 30px rgba(0,0,0,.08);
+transition:.4s;
+}
+
+.facility-card:hover{
+transform:translateY(-10px);
+}
+
+.facility-card img{
+width:100%;
+height:240px;
+object-fit:cover;
+}
+
+.facility-card h3{
+padding:20px 20px 10px;
+font-size:24px;
+color:#5b3a29;
+}
+
+.facility-card p{
+padding:0 20px 25px;
+color:#666;
+line-height:1.7;
+}
+
+/* ===========================
+   WHY CHOOSE US
+=========================== */
+
+.why-us{
+background:#faf5ec;
+}
+
+.why-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+gap:25px;
+}
+
+.why-box{
+background:#fff;
+padding:30px;
+border-radius:18px;
+text-align:center;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+transition:.4s;
+}
+
+.why-box:hover{
+background:#5b3a29;
+transform:translateY(-10px);
+}
+
+.why-box:hover h3,
+.why-box:hover p{
+color:#fff;
+}
+
+.why-box h3{
+margin-bottom:15px;
+color:#5b3a29;
+font-size:22px;
+}
+
+.why-box p{
+color:#666;
+}
+
+/* ===========================
+   GALLERY
+=========================== */
+
+.gallery-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:20px;
+}
+
+.gallery-grid img{
+width:100%;
+height:240px;
+object-fit:cover;
+border-radius:18px;
+box-shadow:0 8px 20px rgba(0,0,0,.12);
+transition:.4s;
 cursor:pointer;
 }
 
-.contact button:hover{
-background:#8b5e3c;
+.gallery-grid img:hover{
+transform:scale(1.05);
 }
 
-.contact-info{
-margin-bottom:30px;
+/* ===========================
+   ADMISSION
+=========================== */
+
+.admission{
+background:linear-gradient(rgba(91,58,41,.9),rgba(91,58,41,.9)),
+url("images/school1.jpg") center/cover;
+color:#fff;
+text-align:center;
 }
+
+.admission-content{
+max-width:850px;
+margin:auto;
+}
+
+.admission h2{
+font-size:42px;
+margin-bottom:20px;
+}
+
+.admission p{
+font-size:18px;
+line-height:1.8;
+margin-bottom:30px;
+}/* ===========================
+   CONTACT SECTION
+=========================== */
+
+.contact{
+background:#fff;
+}
+
+.contact-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:40px;
+align-items:start;
+}
+
+.contact-info h3{
+font-size:30px;
+color:#5b3a29;
+margin-bottom:20px;
+}
+
+.contact-info p{
+font-size:17px;
+color:#555;
+margin-bottom:18px;
+line-height:1.8;
+}
+
+.contact-form input,
+.contact-form textarea{
+width:100%;
+padding:15px;
+margin-bottom:18px;
+border:1px solid #ddd;
+border-radius:10px;
+font-size:16px;
+outline:none;
+transition:.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+border-color:#c49a6c;
+box-shadow:0 0 8px rgba(196,154,108,.3);
+}
+
+.contact-form button{
+border:none;
+cursor:pointer;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+background:#3f2d20;
+color:#fff;
+text-align:center;
+padding:60px 20px;
+}
+
+footer img{
+width:90px;
+margin:0 auto 20px;
+border-radius:50%;
+background:#fff;
+padding:5px;
+}
+
+footer h2{
+font-size:30px;
+margin-bottom:10px;
+}
+
+footer p{
+color:#ddd;
+line-height:1.8;
+}
+
+/* ===========================
+   WHATSAPP BUTTON
+=========================== */
 
 .whatsapp{
 position:fixed;
-bottom:20px;
-right:20px;
+bottom:25px;
+right:25px;
 background:#25D366;
-color:white;
-padding:15px 20px;
+color:#fff;
+padding:15px 22px;
 border-radius:50px;
 text-decoration:none;
-font-weight:bold;
-box-shadow:0 5px 15px rgba(0,0,0,.2);
+font-weight:600;
+box-shadow:0 8px 20px rgba(0,0,0,.25);
+transition:.3s;
+z-index:999;
 }
 
-footer{
-background:#6f4e37;
-color:white;
-text-align:center;
-padding:25px;
-margin-top:50px;
+.whatsapp:hover{
+transform:scale(1.08);
 }
+
+/* ===========================
+   MOBILE RESPONSIVE
+=========================== */
 
 @media(max-width:768px){
 
 .navbar{
 flex-direction:column;
+gap:15px;
+text-align:center;
 }
 
 .nav-links{
-margin-top:15px;
 flex-wrap:wrap;
 justify-content:center;
+gap:15px;
 }
 
 .hero-content h1{
-font-size:35px;
+font-size:38px;
 }
 
 .hero-content p{
-font-size:17px;
+font-size:18px;
 }
 
-section h2{
+.section-title h2{
 font-size:30px;
 }
 
+.about-content,
+.contact-grid{
+grid-template-columns:1fr;
+}
+
+.about-text h3{
+font-size:28px;
+}
+
+.admission h2{
+font-size:32px;
+}
+
+.btn{
+padding:14px 30px;
+}
+
+.logo img{
+width:55px;
+height:55px;
+}
+
+.logo h2{
+font-size:20px;
+}
+
+}
+
+/* ===========================
+   SMOOTH ANIMATIONS
+=========================== */
+
+section{
+animation:fadeUp .8s ease;
+}
+
+html{
+scroll-behavior:smooth;
 }
