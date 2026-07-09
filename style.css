@@ -98,7 +98,7 @@ color:#e8c27a;
 height:100vh;
 background:
 linear-gradient(rgba(45,28,18,.65),rgba(45,28,18,.65)),
-url("images/school1.jpg") center/cover no-repeat;
+url("url("images/IMG_5634.jpeg").jpg") center/cover no-repeat;
 display:flex;
 align-items:center;
 justify-content:center;
@@ -419,7 +419,7 @@ transform:scale(1.05);
 
 .admission{
 background:linear-gradient(rgba(91,58,41,.9),rgba(91,58,41,.9)),
-url("images/school1.jpg") center/cover;
+url("url("images/IMG_5634.jpeg")") center/cover;
 color:#fff;
 text-align:center;
 }
